@@ -5,28 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Python Introduction</title>
+    <style>
+        .myStyle {
+            white-space: pre-wrap;
+            border-radius: 25px;
+            border: 2px solid #73AD21;
+            padding: 20px; 
+            width: auto;
+            height: auto;  
+        }
+    </style>
 </head>
 <body>
-     <h1>List of Contents</h1>
+     <h1>Table of Contents</h1>
+     <section><strong>Chapter 1 - Introduction</strong></section>
      <ol>
-         <li>Intro</li>
-         <li>Basics</li>
-         <li>Datatypes</li>
-         <li>operators</li>
-         <li>Basic Programs</li>
-         <li>Conditional Statements</li>
-         <li>Programms</li>
-         <li>Loops</li>
-         <li>Basic Programs</li>
-         <li>Functions</li>
-         <li>Basic Programs</li>
-         <li>OOPS</li>
-         <li>Classes</li>
-         <li>Basic Programs</li>
-         <li>Modules</li>
-         <li>Basic Programs</li>
-         <li>Python Libraries</li>
-         <li>Basic Programs</li>
+         <li>What is Python ?</li>
+         <p>Python is a high-level,general-purpose interpreted, interactive, object-oriented,
+            language. It was created by Guido van Rossum during 1985- 1990.
+            The name Python comes from the surreal British comedy group Monty Python, 
+            not from the snake. Python programmers are affectionately called Pythonistas, 
+            and both Monty Python and serpentine references usually pepper Python tutorials 
+            and documentation.
+         </p>
      </ol>
+     <section><strong>Chapter 2 - Install Python</strong></section>
+     <ol>
+         <li>Steps to Install Python on your Local Machine</li>
+          <p> Before make your hands dirty with python, please install Python on you local machine.
+            Python software can be download  from 
+            <a href="https://www.python.org/downloads/" target="_blank">Download</a>.
+        </p>
+     </ol>
+     <section><strong>Chapter 3 - Open Python Terminal</strong></section>
+     <ol>
+        <li>After Install Python , Open either command prompt If you are using Windows OS Computer or
+            Open Terminal If youy are usin Mac OS Computer and Type python and hit enter,
+            It will open Python interactive shell with  ">>>" symbol.
+            Just type : 
+            print('Hello World') and then press enter you will see output 
+            Hello World
+        </li>
+        <p>You can execute any valid instructions on he interactive shell</p>
+         <div class="myStyle">
+            >>> 2+3
+            5 
+            >>> 2/2
+            0
+        </div>
+        <p>Don't worry, If you haven't understand what's going on in the background. You will 
+            undersatnd everything in later chapters , Please Hold your Horses. LOL. 
+            we promise you, You will become best Pythonista.
+        </p>
+    </ol>
+   <section><strong>Chapter 4 - Fundamentals</strong></section>
+    <ol>
+        <li>Every Python file has extension ".py" and we use command python filename.py  to run
+        the code in that file.</li>
+ 
+        <p>Create a file called HelloWorld.py and then below code in that file</p>
+        <div class="myStyle">
+            HelloWorld.py
+            ---------------------- 
+
+            print('Hello Python')
+            print(1+2)
+            print('Python is Awesome')
+        </div>
+        <strong>NOTE : Save the file and run the file using command python HelloWorld.py</strong>
+        <p>Congrats...! You have started your journey to become Pythonista. Cheers...!
+            Get a Coffee or Beer to celebrate.
+        </p>
+
+    </ol>
+    <section><strong>Chapter 5 - Datatypes</strong></section>
+    <ol>
+        <p>Python Language has different data types. </p>
+        <li>Numbers</li>
+            <p>Number Data type is used to store the numeric values.The cool thing about python
+                is , no need to define the data type when you declare the varaible.
+                It creates the variable based on value is assigned to that variable implicitly.
+              <div class="myStyle">
+                Syntax:
+                age  = 10
+                Here age variable is created with Number data type.
+                It's Cool right , isn't it?
+             </div>
+            </p>
+        <li>String</li>
+        <p> String is the Data type which is used for stroring String values.</p> 
+        <div class="myStyle">
+         Syntax:
+         name = 'Learn Daily'
+         Here language variable is created with String data type.
+         </div>
+        <li>List</li>
+        <p>List is one of the flexible  data type in python langugae which is used to store the
+            collection of different data type values. List is defined with sqaure brackets [],
+            and it each element in it seperarted by comma.
+        </p> 
+        <div class="myStyle">
+         Syntax:
+            myList = [1, 'Python', 3.14]
+            myList = ["a", 1, 1.3, "Python"] 
+        
+            print(myList)  # print whole list 
+            print(myList[1])  # print 2nd element i.e 1 
+            print(myList[1:3])  # print from 2nd to 3rd element in myList
+            print(myList*2)
+            
+            myList2 = ['a', 2] 
+         </div>
+         
+         <p><strong>NOTE: In Python, the elements in List data type can be updated.</strong></p>
+         
+        <li>Tuple</li>
+        <p>Tuple is one of the other flexible data type whcih is similar to list data type
+            but only difference is  elements in tuple are enclosed in parenthesis ()
+            the values in tuple cannot be upadted , they are only readble </p>
+            <div class="myStyle">
+             Syntax:
+                myTuple = ("a", 1, 1.3, "Python")
+                
+                print(myTuple)  # print whole myTuple
+                print(myTuple[1])  # print 2nd element i.e 1
+                print(myTuple[1:3])  # print from 2nd to 3rd element in myList 
+                myTuple[0] = 'Java'  # error
+            </div>
+        <li>Dictionary</li>
+        <p>Dictionay is a other kind of data type which is used to strore key and value pairs and
+        and it is defined with curly braces: {} </p>
+        <div class="myStyle">
+            Syntax:
+            # Dictionary : Key value pairs 
+            
+            myDictionary = {'name': 'Python','creator': 'Guido van Rossum', 'born': '1980} 
+            
+            print(myDictionary['name']) # It prints the Python.
+            print(myDictionary.keys()) # It prints all keys 
+            print(myDictionary.values()) # It prints all values
+        </div>
+    </ol>
 </body>
 </html>
